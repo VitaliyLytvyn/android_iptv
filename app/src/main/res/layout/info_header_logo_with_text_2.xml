@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:orientation="vertical"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             android:fitsSystemWindows="true"
+                                             app:layout_collapseMode="pin"
+                                             android:layout_marginBottom="16dp"
+                                             android:id="@+id/infoHeaderWithLogoLayout"
+                                             android:background="@drawable/header_short_1">
+    <!--android:background="@drawable/header_short_1"-->
+    <!--android:background="@drawable/background_1"-->
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewLogo"
+        android:src="@drawable/logo_white"
+        android:paddingEnd="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingStart="12dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="65dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="65dp"
+        android:layout_marginStart="65dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="65dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        />
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewHead"
+        android:textColor="@color/white"
+        android:paddingEnd="4dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingStart="4dp"
+        android:gravity="center_horizontal"
+        android:textSize="18sp"
+        android:paddingBottom="8dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogo"/>
+
+    <!--android:text="@string/info_header_main"-->
+
+</android.support.constraint.ConstraintLayout>

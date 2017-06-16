@@ -1,0 +1,67 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+
+                                             tools:context="com.app.tv.mediacast.FragmentTimeZone"
+                                             android:orientation="vertical"
+                                             android:weightSum="3">
+
+
+    <Button
+        android:id="@+id/button_timezones"
+        style="@style/GrayButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:text="@string/timezones_select"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/listView_timezones"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/listView_timezones"
+        app:layout_constraintRight_toLeftOf="@+id/guideline39"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline38"
+        app:layout_constraintGuide_percent="0.35"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="337dp"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline39"
+        app:layout_constraintGuide_percent="0.65"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="625dp"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline40"
+        app:layout_constraintGuide_percent="0.8"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="372dp"
+        tools:layout_editor_absoluteX="0dp"/>
+
+    <ListView
+        android:id="@+id/listView_timezones"
+        style="@style/CustomListView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="4.0sp"
+        android:background="@android:color/transparent"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline38"
+        app:layout_constraintRight_toLeftOf="@+id/guideline39"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/guideline40"/>
+
+</android.support.constraint.ConstraintLayout>

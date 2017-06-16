@@ -1,0 +1,242 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+
+                                             tools:context="com.app.tv.mediacast.FragmentEditProfile"
+                                             app:layout_scrollFlags="scroll">
+
+
+    <!--<ScrollView-->
+        <!--android:layout_width="576dp"-->
+        <!--android:layout_height="295dp"-->
+        <!--tools:layout_editor_absoluteY="0dp"-->
+        <!--tools:layout_editor_absoluteX="8dp">-->
+        <!---->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+    <TextView
+        android:id="@+id/textView_edit_user_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/edit_user_description"
+
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@+id/guideline22"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline23"
+        app:layout_constraintRight_toLeftOf="@+id/guideline24"/>
+
+    <EditText
+        android:id="@+id/editText_edit_user_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:hint="@string/edit_user_name"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/textView_edit_user_description"
+        app:layout_constraintLeft_toLeftOf="@+id/textView_edit_user_description"
+        app:layout_constraintRight_toRightOf="@+id/textView_edit_user_description"
+        />
+
+
+    <EditText
+        android:id="@+id/editText_edit_user_surname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:hint="@string/edit_user_surname"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/editText_edit_user_name"
+        app:layout_constraintLeft_toLeftOf="@+id/textView_edit_user_description"
+        app:layout_constraintRight_toRightOf="@+id/textView_edit_user_description"
+        />
+
+
+    <EditText
+        android:id="@+id/editText_edit_user_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:hint="@string/edit_user_phone"
+        android:inputType="phone"
+        app:layout_constraintLeft_toLeftOf="@+id/textView_edit_user_description"
+        app:layout_constraintRight_toRightOf="@+id/textView_edit_user_description"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintTop_toBottomOf="@+id/editText_edit_user_surname"
+        />
+
+
+
+    <Button
+        android:id="@+id/button_edit_user_confirm"
+        style="@style/GrayButtonStyle"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/edit_user_confirm"
+        app:layout_constraintTop_toBottomOf="@+id/editText_edit_user_phone"
+        app:layout_constraintLeft_toLeftOf="@+id/textView_edit_user_description"
+        app:layout_constraintRight_toRightOf="@+id/textView_edit_user_description"
+        android:layout_marginTop="8dp"/>
+
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline22"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="0dp"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline23"
+        app:layout_constraintGuide_percent="0.25"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="148dp"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline24"
+        app:layout_constraintGuide_percent="0.75"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="444dp"/>
+
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+</android.support.constraint.ConstraintLayout>
+
+<!--jfjjfjjfjjjfjfjfjjjcjcjcjjcnnvnvnuuududunsnsnsuuxuxx-->
+
+<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+                                             <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                                             <!--xmlns:tools="http://schemas.android.com/tools"-->
+                                             <!--android:layout_width="match_parent"-->
+                                             <!--android:layout_height="match_parent"-->
+
+                                             <!--tools:context="com.app.tv.mediacast.FragmentEditProfile">-->
+
+
+<!--<TextView-->
+    <!--android:id="@+id/textView_edit_user_description"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/edit_user_description"-->
+
+    <!--android:textSize="18sp"-->
+    <!--app:layout_constraintTop_toTopOf="@+id/guideline22"-->
+    <!--app:layout_constraintLeft_toLeftOf="@+id/guideline23"-->
+    <!--app:layout_constraintRight_toLeftOf="@+id/guideline24"/>-->
+
+<!--<EditText-->
+    <!--android:id="@+id/editText_edit_user_name"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+
+    <!--android:hint="@string/edit_user_name"-->
+    <!--android:inputType="textPersonName"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/textView_edit_user_description"-->
+    <!--app:layout_constraintLeft_toLeftOf="@+id/textView_edit_user_description"-->
+    <!--app:layout_constraintRight_toRightOf="@+id/textView_edit_user_description"-->
+    <!--android:layout_marginTop="8dp"/>-->
+
+
+<!--<EditText-->
+    <!--android:id="@+id/editText_edit_user_surname"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+
+    <!--android:hint="@string/edit_user_surname"-->
+    <!--android:inputType="textPersonName"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/editText_edit_user_name"-->
+    <!--app:layout_constraintLeft_toLeftOf="@+id/textView_edit_user_description"-->
+    <!--app:layout_constraintRight_toRightOf="@+id/textView_edit_user_description"-->
+    <!--android:layout_marginTop="8dp"/>-->
+
+
+<!--<EditText-->
+    <!--android:id="@+id/editText_edit_user_phone"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+
+    <!--android:hint="@string/edit_user_phone"-->
+    <!--android:inputType="phone"-->
+    <!--app:layout_constraintLeft_toLeftOf="@+id/textView_edit_user_description"-->
+    <!--app:layout_constraintRight_toRightOf="@+id/textView_edit_user_description"-->
+    <!--app:layout_constraintHorizontal_bias="0.0"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/editText_edit_user_surname"-->
+    <!--android:layout_marginTop="8dp"/>-->
+
+<!--&lt;!&ndash;<TextView&ndash;&gt;-->
+<!--&lt;!&ndash;android:id="@+id/textView_edit_user_country_title"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_below="@id/editText_edit_user_email"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_marginLeft="12dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_marginTop="12dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:text="@string/edit_user_country"&ndash;&gt;-->
+<!--&lt;!&ndash;android:textColor="@color/darker_grey"&ndash;&gt;-->
+<!--&lt;!&ndash;android:textSize="18sp" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;<Spinner&ndash;&gt;-->
+<!--&lt;!&ndash;android:id="@+id/spinner_countries"&ndash;&gt;-->
+<!--&lt;!&ndash;style="@style/spinner_style"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_below="@id/textView_edit_user_country_title"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_centerHorizontal="true"&ndash;&gt;-->
+<!--&lt;!&ndash;android:layout_marginTop="6dp"&ndash;&gt;-->
+<!--&lt;!&ndash;android:drawSelectorOnTop="true"&ndash;&gt;-->
+<!--&lt;!&ndash;android:popupBackground="@color/white" />&ndash;&gt;-->
+
+<!--<Button-->
+    <!--android:id="@+id/button_edit_user_confirm"-->
+    <!--style="@style/GrayButtonStyle"-->
+
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="48dp"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/edit_user_confirm"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--app:layout_constraintTop_toBottomOf="@+id/editText_edit_user_phone"-->
+    <!--app:layout_constraintLeft_toLeftOf="@+id/textView_edit_user_description"-->
+    <!--app:layout_constraintRight_toRightOf="@+id/textView_edit_user_description"/>-->
+
+<!--<android.support.constraint.Guideline-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/guideline22"-->
+    <!--android:orientation="horizontal"-->
+    <!--app:layout_constraintGuide_percent="0.05"-->
+    <!--tools:layout_editor_absoluteY="16dp"-->
+    <!--tools:layout_editor_absoluteX="0dp"/>-->
+
+<!--<android.support.constraint.Guideline-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/guideline23"-->
+    <!--app:layout_constraintGuide_percent="0.3"-->
+    <!--android:orientation="vertical"-->
+    <!--tools:layout_editor_absoluteY="0dp"-->
+    <!--tools:layout_editor_absoluteX="178dp"/>-->
+
+<!--<android.support.constraint.Guideline-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/guideline24"-->
+    <!--app:layout_constraintGuide_percent="0.7"-->
+    <!--android:orientation="vertical"-->
+    <!--tools:layout_editor_absoluteY="0dp"-->
+    <!--tools:layout_editor_absoluteX="414dp"/>-->
+
+
+<!--</android.support.constraint.ConstraintLayout>-->

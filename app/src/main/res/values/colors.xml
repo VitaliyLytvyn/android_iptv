@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black2">#ff000000</color>
+    <color name="black">#333333</color>
+    <color name="white">#ffffff</color>
+    <color name="dark_grey">#323232</color>
+    <color name="orange">#EB5E0C</color>
+    <color name="light_grey">#8b8b8b</color>
+    <color name="darker_grey">#8B8B8B</color>
+    <color name="hint_grey">#4A4A4A</color>
+    <color name="button_not_active_grey">#6B6B6B</color>
+    <color name="text_not_highlighted">#6DA4F0</color>
+    <color name="blue">#58C2EE</color>
+    <color name="blue_background">#357AD7</color>
+    <color name="light_blue">#B9E1F1</color>
+    <color name="green">#2DD925</color>
+    <color name="lilac">#8E44AD</color>
+    <color name="dirty_orange">#CD520A</color>
+    <color name="dirty_green">#0BAB00</color>
+    <color name="deep_blue">#4AADD7</color>
+    <color name="holo_light">#fff3f3f3</color>
+    <color name="black_transparent">#00000000</color>
+    <color name="button_green">#98E338</color>
+
+    <color name="black_transparent_dark">#cc0a0a0a</color>
+
+    <color name="colorPrimary">#3f51b5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_selected_tab">#0068ce</color>
+    <color name="background_grey_info_table">#F6F6F6</color>
+    <color name="button_green_darker">#90BF54</color>
+    <color name="button_green_pressed">#73a930</color>
+    <color name="red_dark">#B11C00</color>
+    <color name="text_table_dark">#202e44</color>
+
+    <color name="semi_transparent">#204E77C9</color>
+    <color name="divider">#D1D1D1</color>
+    <color name="background_gray">#F3F3F3</color>
+    <color name="text_gray">#ababab</color>
+    <color name="text_gray222">#838383</color>
+    <color name="blue_button">#0278EE</color>
+    <color name="blue_info_button">#44a7f3</color>
+    <color name="blue_info_button_pressed">#2a87ce</color>
+    <color name="controls_stroke">#D5D5D5</color>
+    <color name="test">#8a3e4046</color>
+    <color name="color_forgot_pass">#00aaf7</color>
+</resources>

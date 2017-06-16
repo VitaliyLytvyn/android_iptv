@@ -1,0 +1,647 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <import type="java.lang.String"/>
+        <import type="java.lang.Integer"/>
+        <import type="com.app.tv.mediacast.util.Global"/>
+        <import type="com.app.tv.mediacast.util.Constant"/>
+
+        <variable
+            name="model"
+            type="com.app.tv.mediacast.retrofit.data.DataPlan"/>
+        <variable
+            name="package0"
+            type="com.app.tv.mediacast.retrofit.data.Package"/>
+        <variable
+            name="package1"
+            type="com.app.tv.mediacast.retrofit.data.Package"/>
+        <variable
+            name="package2"
+            type="com.app.tv.mediacast.retrofit.data.Package"/>
+    </data>
+
+    <RelativeLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context="info.InfoMainActivity">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginStart="6dp"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:stretchColumns="*"
+                        android:id="@+id/table_layout1"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <!-- first row of the table layout-->
+                        <TableRow
+                            android:id="@+id/firstRow"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:layout_gravity="center"
+                            >
+                            <TextView
+                                android:id="@+id/row1_element1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@{package0.name}"
+
+                                android:textSize="16sp"
+                                android:textStyle="normal|bold"
+                                android:layout_gravity="center"/>
+                            <TextView
+                                android:id="@+id/row1_element2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@{package1.name}"
+
+
+                                android:textSize="16sp"
+                                android:textStyle="normal|bold"
+                                android:layout_gravity="center"/>
+                            <TextView
+                                android:id="@+id/row1_element3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@{package2.name}"
+
+                                android:textSize="16sp"
+                                android:textStyle="normal|bold"
+                                android:layout_gravity="center"/>
+                        </TableRow>
+
+                        <!-- 2 row of the table layout-->
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/background_grey_info_table"
+                            android:layout_gravity="center"
+
+                            >
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+
+                                >
+                                <TextView
+                                    android:id="@+id/price_cell_0_0"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14sp"
+                                    android:textStyle="normal|bold"
+                                    android:text="@{!model.period.equals(Constant.YEARLY) ?'$'+ String.valueOf(package0.price) :'$'+String.valueOf(package0.price)+@string/per_year}"
+                                    android:layout_gravity="center"
+                                    android:paddingTop="5dp"/>
+                                <TextView
+                                    android:id="@+id/price_cell_0_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="12sp"
+                                    android:layout_gravity="center"
+                                    android:text="@{!model.period.equals(Constant.YEARLY) ? @string/month : Global.color(@color/red_dark, String.valueOf(@string/you_save + package0.savePrice))}"
+                                    android:paddingBottom="5dp"/>
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+
+                                >
+                                <TextView
+                                    android:id="@+id/price_cell_1_0"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14sp"
+                                    android:textStyle="normal|bold"
+                                    android:layout_gravity="center"
+                                    android:text="@{!model.period.equals(Constant.YEARLY) ?'$'+String.valueOf(package1.price) :'$'+String.valueOf(package1.price)+@string/per_year}"
+                                    android:paddingTop="5dp"/>
+                                <TextView
+                                    android:id="@+id/price_cell_1_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="12sp"
+                                    android:layout_gravity="center"
+                                    android:text="@{!model.period.equals(Constant.YEARLY) ? @string/month : Global.color(@color/red_dark, String.valueOf(@string/you_save + package1.savePrice))}"
+                                    android:paddingBottom="5dp"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_gravity="center"
+
+                                >
+                                <TextView
+                                    android:id="@+id/price_cell_2_0"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14sp"
+                                    android:textStyle="normal|bold"
+                                    android:layout_gravity="center"
+                                    android:text="@{!model.period.equals(Constant.YEARLY) ?'$'+String.valueOf(package2.price) :'$'+String.valueOf(package2.price)+@string/per_year}"
+                                    android:paddingTop="5dp"/>
+                                <TextView
+                                    android:id="@+id/price_cell_2_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="12sp"
+                                    android:layout_gravity="center"
+                                    android:text="@{!model.period.equals(Constant.YEARLY) ? @string/month : Global.color(@color/red_dark, String.valueOf(@string/you_save + package2.savePrice))}"
+                                    android:paddingBottom="5dp"/>
+                            </LinearLayout>
+                        </TableRow>
+
+                        <!-- 3 row of the table layout-->
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="5dp"
+                            android:layout_gravity="center"
+
+                            android:gravity="center"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/adv_free"
+                                android:gravity="center"
+                                android:textSize="14sp"
+                                android:textStyle="normal|bold"
+                                android:layout_span="3"
+                                android:layout_gravity="center"/>
+                        </TableRow>
+
+                        <!-- 4 row of the table layout-->
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:background="@color/background_grey_info_table"
+                            android:layout_gravity="center"
+                            >
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:src="@{package0.data.advertasingFree ? @drawable/mark_grey : @drawable/ic_remove_black_24dp}"
+                                />
+                            <!--android:src="@drawable/ic_remove_black_24dp"-->
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:src="@{package1.data.advertasingFree ? @drawable/mark_grey : @drawable/ic_remove_black_24dp}"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:src="@{package2.data.advertasingFree ? @drawable/mark_grey : @drawable/ic_remove_black_24dp}"
+                                />
+                        </TableRow>
+
+                        <!-- 5 row of the table layout-->
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="5dp"
+                            android:layout_gravity="center"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/screens_you_can_watch"
+                                android:gravity="center"
+                                android:textSize="14sp"
+                                android:textStyle="normal|bold"
+                                android:layout_span="3"/>
+                        </TableRow>
+
+                        <!-- 6 row of the table layout-->
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="5dp"
+                            android:background="@color/background_grey_info_table"
+                            android:layout_gravity="center"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@{String.valueOf(package0.data.screens)}"
+                                android:gravity="center"
+                                android:textSize="14sp"
+                                android:textStyle="normal"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@{String.valueOf(package1.data.screens)}"
+                                android:gravity="center"
+                                android:textSize="14sp"
+                                android:textStyle="normal"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@{String.valueOf(package2.data.screens)}"
+                                android:gravity="center"
+                                android:textSize="14sp"
+                                android:textStyle="normal"/>
+                        </TableRow>
+
+                        <!-- 7 row of the table layout-->
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="5dp"
+                            android:layout_gravity="center"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/on_tv_laptop_phone"
+                                android:gravity="center"
+                                android:textSize="14sp"
+                                android:textStyle="normal|bold"
+                                android:layout_span="3"/>
+                        </TableRow>
+
+                        <!-- 8 row of the table layout-->
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:background="@color/background_grey_info_table"
+                            android:layout_gravity="center"
+                            >
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:src="@{package0.data.onLaptop ? @drawable/mark_grey : @drawable/ic_remove_black_24dp}"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:src="@{package1.data.onLaptop ? @drawable/mark_grey : @drawable/ic_remove_black_24dp}"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:src="@{package2.data.onLaptop ? @drawable/mark_grey : @drawable/ic_remove_black_24dp}"
+                                />
+                        </TableRow>
+
+                        <!-- 9 row of the table layout-->
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="5dp"
+                            android:layout_gravity="center"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/days_14_archive"
+                                android:gravity="center"
+                                android:textSize="14sp"
+                                android:textStyle="normal|bold"
+                                android:layout_span="3"/>
+                        </TableRow>
+
+                        <!-- 10 row of the table layout-->
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:background="@color/background_grey_info_table"
+                            android:layout_gravity="center"
+                            >
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:src="@{package0.data.archive ? @drawable/mark_grey : @drawable/ic_remove_black_24dp}"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:src="@{package1.data.archive ? @drawable/mark_grey : @drawable/ic_remove_black_24dp}"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:src="@{package2.data.archive ? @drawable/mark_grey : @drawable/ic_remove_black_24dp}"
+                                />
+                        </TableRow>
+
+                        <!-- 11 row of the table layout-->
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="5dp"
+                            android:layout_gravity="center"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/channels"
+                                android:gravity="center"
+                                android:textSize="14sp"
+                                android:textStyle="normal|bold"
+                                android:layout_span="3"/>
+                        </TableRow>
+
+                        <!-- 12 row of the table layout-->
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="5dp"
+                            android:background="@color/background_grey_info_table"
+                            android:layout_gravity="center"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@{String.valueOf(package0.channels)}"
+                                android:gravity="center"
+                                android:textSize="14sp"
+                                android:textStyle="normal"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@{String.valueOf(package1.channels)}"
+                                android:gravity="center"
+                                android:textSize="14sp"
+                                android:textStyle="normal"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@{String.valueOf(package2.channels)}"
+                                android:gravity="center"
+                                android:textSize="14sp"
+                                android:textStyle="normal"/>
+                        </TableRow>
+
+                        <!-- 13 row of the table layout-->
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="5dp"
+                            android:layout_gravity="center"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/cancel_any_time"
+                                android:gravity="center"
+                                android:textSize="14sp"
+                                android:textStyle="normal|bold"
+                                android:layout_span="3"/>
+                        </TableRow>
+
+                        <!-- 14 row of the table layout-->
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:background="@color/background_grey_info_table"
+                            android:layout_gravity="center"
+                            >
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:src="@{package0.data.cancelAnyTime ? @drawable/mark_grey : @drawable/ic_remove_black_24dp}"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:src="@{package1.data.cancelAnyTime ? @drawable/mark_grey : @drawable/ic_remove_black_24dp}"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:src="@{package2.data.cancelAnyTime ? @drawable/mark_grey : @drawable/ic_remove_black_24dp}"
+                                />
+                        </TableRow>
+
+                        <!-- 15 row of the table layout-->
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="5dp"
+                            android:layout_gravity="center"
+                            >
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@{String.format(@string/first_7_days_free_2, model.days)}"
+                                android:gravity="center"
+                                android:textSize="14sp"
+                                android:textStyle="normal|bold"
+                                android:layout_span="3"/>
+                            <!--android:text="@string/first_7_days_free"-->
+                        </TableRow>
+
+                        <!-- 16 row of the table layout-->
+                        <TableRow
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp"
+                            android:background="@color/background_grey_info_table"
+                            android:layout_gravity="center"
+                            >
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:src="@{package0.data.haveTrial ? @drawable/mark_grey : @drawable/ic_remove_black_24dp}"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:src="@{package1.data.haveTrial ? @drawable/mark_grey : @drawable/ic_remove_black_24dp}"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:src="@{package2.data.haveTrial ? @drawable/mark_grey : @drawable/ic_remove_black_24dp}"
+                                />
+                        </TableRow>
+
+                        <!-- 17 row of the table layout-->
+                        <TableRow
+                            android:id="@+id/tableRow_select"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingTop="5dp"
+                            android:layout_gravity="center"
+                            >
+                            <TextView
+                                android:id="@+id/text_view_select_0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/select"
+                                android:gravity="center"
+                                android:textSize="14sp"
+                                android:textStyle="normal"/>
+                            <TextView
+                                android:id="@+id/text_view_select_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/select"
+                                android:gravity="center"
+                                android:textSize="14sp"
+                                android:textStyle="normal"/>
+                            <TextView
+                                android:id="@+id/text_view_select_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/select"
+                                android:gravity="center"
+                                android:textSize="14sp"
+                                android:textStyle="normal"/>
+                        </TableRow>
+
+                    </TableLayout>
+
+                    <!--LinearLayoutLinearLayoutLinearLayoutLinearLayoutLinearLayoutLinearLayoutLinearLayout-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:id="@+id/table_layout2"
+                        android:layout_gravity="center">
+
+                        <!-- first element of the row-->
+                        <TextView
+                            android:id="@+id/table2_view0"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/table2_view1"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:gravity="center"/>
+                        <TextView
+                            android:id="@+id/table2_view2"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+
+                <include layout="@layout/info_login_button_layout"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:layout_marginTop="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="10dp"
+
+                    android:id="@+id/faq_LinearLayout"
+                    >
+                    <TextView
+                        android:text="@string/common_questions"
+                        android:id="@+id/text_view_before_faq"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textColor="@color/black"
+                        android:paddingBottom="20dp"
+
+                        android:textStyle="normal"
+                        android:textSize="26sp"/>
+                    <TextView
+                        android:text="@string/info_faq"
+                        android:id="@+id/text_view_faq"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textStyle="normal"
+                        android:textColor="@color/text_table_dark"/>
+
+                    <include layout="@layout/info_login_button_layout_2"/>
+                    <!--android:id="@+id/login_button_2_layout"-->
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </RelativeLayout>
+
+</layout>

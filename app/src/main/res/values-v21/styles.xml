@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AlertDialogCustom" parent="@android:style/Theme.Material.Dialog.Alert">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>

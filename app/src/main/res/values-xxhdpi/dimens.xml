@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="layout_weight_surface" format="float" type="dimen">0.35</item>
+    <item name="layout_weight_controls" format="float" type="dimen">0.65</item>
+</resources>

@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--FB Login-->
+    <string name="facebook_app_id" translatable="false">111111111111111</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb111111111111111</string>
+    <string name="cancel">Registration with FB was cancelled</string>
+
+    <!-- have no subscription_dialog_message-->
+    <string name="no_subscription_dialog_message">You have no active subscription. Do you want to do it wright now?</string>
+
+    <!-- unsubscribe_dialog_message-->
+    <string name="unsubscribe_dialog_message">Are you sure you want to cancel your subscription? You will no longer be able to watch Mediacast TV!</string>
+
+    <!-- progress_spinner_message-->
+    <string name="progress_spinner_message">Processing...</string>
+    <!-- upgrade choose card-->
+    <string name="upgrade_choose_card_header">How would you like to pay?</string>
+    <string name="upgrade_choose_card_text">You can use the same credit card\nas you have used before</string>
+    <string name="upgrade_choose_card_button_this">Use this Credit Card</string>
+    <string name="upgrade_choose_card_button_another">Use another credit card</string>
+    <string name="upgrade_choose_card_powered_by_stripe">Secured by <b>Stripe</b></string>
+    <string name="upgrade_choose_card_powered_by">Secured by</string>
+
+    <!-- secured_by_stripe-->
+    <string name="secured_by_stripe">Secured by <b>Stripe</b></string>
+    <!--trial_started-->
+    <string name="trial_started">Your 7 day trial period has been started</string>
+    <!-- couldnt_process-->
+    <string name="couldnt_process">We couldn\'t process your payment</string>
+    <!--timezones_button_savetext-->
+    <string name="timezones_button_savetext">Save</string>
+    <!--terms_of_use_fab_button-->
+    <string name="terms_of_use_fab_button">Back</string>
+
+    <!--Plan_settings-->
+    <string name="subscribed_on_apple_dialog_message">You can cancel this subscription only on iOS device</string>
+    <string name="plan_settings_title">Plan settings</string>
+    <string name="plan_settings_plan">Plan</string>
+    <string name="plan_settings_beginned">Started</string>
+    <string name="plan_settings_ends">Ends</string>
+    <string name="plan_settings_days_left">Days left</string>
+    <string name="plan_settings_button_upgrade">Upgrade plan</string>
+    <string name="plan_settings_cancel_subscription">Cancel subscription</string>
+    <string name="plan_settings_renew_button">Pick a new plan</string>
+    <string name="plan_settings_renew_text">You have no active plan\nconnected to your account</string>
+    <string name="plan_settings_renew_subscription">Renew your subscription</string>
+    <string name="plan_settings_user_unsubscribed">You have unsubscribed</string>
+
+    <!--ListView item 'selected' mark-->
+    <string name="list_view_item_selected">Selected</string>
+
+    <!--Stripe fragment -->
+    <string name="credit_card_header">Enter your payment information</string>
+    <string name="credit_card_details">Your card details</string>
+    <string name="credit_card_hint_cvc">CVC</string>
+    <string name="credit_card_hint_year"><font size="13">XX</font></string>
+    <string name="credit_card_hint_month"><font size="13">XX</font></string>
+    <string name="credit_card_expire_month">Expiration month</string>
+    <string name="credit_card_expire_year">Expiration year</string>
+    <string name="credit_card_number">Card number</string>
+    <string name="credit_cvc_number">CVC number</string>
+    <string name="credit_cvc_number_hint">---</string>
+
+    <string name="credit_card_hint_number"><font size="13">Enter your card number</font></string>
+
+    <string name="validationErrors">Validation Errors</string>
+    <string name="validationErrors_card_number_invalid">The card number that you entered is invalid</string>
+    <string name="validationErrors_expiration_date_invalid">The expiration date that you entered is invalid</string>
+    <string name="validationErrors_CVC_code_invalid">The CVC code that you entered is invalid</string>
+    <string name="validationErrors_card_details_invalid">The card details that you entered are invalid</string>
+
+    <string name="spinner_processing_your_payment">Processing your payment</string>
+
+    <string name="ok">OK</string>
+
+    <!--Activities internal errors-->
+    <string name="authorization_empty_email_en">Email field is empty</string>
+    <string name="authorization_empty_pass_en">Password field is empty</string>
+    <string name="authorization_empty_fields_en">Fields are empty</string>
+    <string name="email_not_valid">E-mail is not valid</string>
+    <string name="fill_all_edittexts">Please fill all the fields</string>
+    <string name="fill_edittext">Please fill the field</string>
+
+    <!--NEW ERRORS-->
+    <string name="channel_id_required">channel_id required</string>
+    <string name="channel_id_invalid">channel_id invalid</string>
+    <string name="channel_not_found">channel not found</string>
+    <string name="channels_not_found">channels not found</string>
+    <string name="channel_already_added">channel already added</string>
+    <string name="lang_required">lang required</string>
+    <string name="lang_invalid">lang invalid</string>
+    <string name="id_required">id required</string>
+    <string name="id_invalid">id invalid</string>
+    <string name="access_invalid">access invalid</string>
+    <string name="facebook_token_required">facebook token required</string>
+    <string name="user_not_exist">user not exist</string>
+    <string name="user_not_active">user not active</string>
+    <string name="email_required">email required</string>
+    <string name="email_invalid">email invalid</string>
+    <string name="name_required">name required</string>
+    <string name="last_name_required">last name required</string>
+    <string name="package_id_required">package_id required</string>
+    <string name="package_not_exist">package not exist</string>
+    <string name="program_not_found">program not found</string>
+    <string name="programs_not_found">programs not found</string>
+    <string name="day_invalid">day invalid</string>
+    <string name="subscription_id_required">subscription_id required</string>
+    <string name="subscription_id_invalid">subscription_id invalid</string>
+    <string name="subscription_invalid">subscription invalid</string>
+    <string name="token_required">token required</string>
+    <string name="new_password_required">new password required</string>
+    <string name="new_password_length">new password length</string>
+    <string name="language_invalid">language invalid</string>
+    <string name="language_busy">language busy</string>
+    <string name="language_required">language required</string>
+    <string name="password_required">password required</string>
+    <string name="password_length">password length</string>
+    <string name="stripe_id_required">stripe_id required</string>
+    <string name="user_exist">user exist</string>
+    <string name="time_zone_required">time zone required</string>
+    <string name="time_zone_invalid">time zone invalid</string>
+    <string name="first_name_required">first name required</string>
+    <string name="phone_required">phone required</string>
+    <string name="payment_fail">payment fail</string>
+    <string name="package_id_invalid">package_id invalid</string>
+    <string name="package_not_found">package not found</string>
+    <string name="card_not_found">card not found</string>
+    <string name="card_id_required">card_id required</string>
+    <string name="card_id_invalid">card_id invalid</string>
+    <string name="subscription_already_cancelled">subscription already cancelled</string>
+    <string name="subscription_not_found">subscription not found</string>
+
+    <!--Ask restart alert Dialog-->
+    <string name="alert_dialog_restart_title">Restart application?</string>
+    <string name="alert_dialog_restart_message">Need to restart application for changes take effect.</string>
+
+    <!--Programs-->
+    <string name="programs_program_is_after">This program not started yet</string>
+
+    <!--Months-->
+    <string name="month_jan">Jan</string>
+    <string name="month_feb">Feb</string>
+    <string name="month_mar">Mar</string>
+    <string name="month_apr">Apr</string>
+    <string name="month_may">May</string>
+    <string name="month_jun">Jun</string>
+    <string name="month_jul">Jul</string>
+    <string name="month_aug">Aug</string>
+    <string name="month_sep">Sep</string>
+    <string name="month_oct">Oct</string>
+    <string name="month_nov">Nov</string>
+    <string name="month_dec">Dec</string>
+
+    <string name="drm_error_not_supported">Protected content not supported on API levels below 18</string>
+    <string name="drm_error_unsupported_scheme">This device does not support the required DRM scheme</string>
+    <string name="drm_error_unknown">An unknown DRM error occurred</string>
+
+    <!-- Application strings -->
+    <string name="app_name">Mediacast</string>
+    <string name="date_days">days left</string>
+    <string name="user_info_fail_retry">Failed to load user\'s information. Please try again later.</string>
+    <string name="no_internet_connection">Check your Internet connection</string>
+    <string name="repeated_pass_not_match">Repeated password not match to new one</string>
+    <string name="loading">Loading...</string>
+    <string name="alert_dialog_logout_title">Logout</string>
+    <string name="alert_dialog_logout_text">Do you want to Logout?</string>
+
+    <!-- Authorization activity -->
+    <string name="authorization_email_hint"><font size="13">Enter your email</font></string>
+    <string name="authorization_password_hint"><font size="13">Enter your password</font></string>
+    <string name="authorization_text_forgot_password_en">Forgot your password?</string>
+    <string name="authorization_text_login_to_mediacast">Login to Mediacast</string>
+    <string name="authorization_text_login_with_existing_account">Login with existing account\n</string>
+    <string name="authorization_text_back_to_homepage">Back to Homepage</string>
+
+    <!-- Create new account activity -->
+    <string name="create_acc_dialog_description">Sorry, we couldn\'t get your email from Facebook. Please enter it below:</string>
+    <string name="create_acc_dialog_header">Sign up to \nstart your free week</string>
+    <string name="create_acc_text_field_email">Your email</string>
+    <string name="create_acc_text_field_name">Your name</string>
+    <string name="create_acc_text_field_password">Your password</string>
+    <string name="create_acc_hint_email"><font size="13">Please enter your email here</font></string>
+    <string name="create_acc_hint_password"><font size="13">Please enter your password here</font></string>
+    <string name="create_acc_hint_name"><font size="13">Please enter your name here</font></string>
+    <string name="create_acc_dialog_button">Continue</string>
+
+    <!-- ActivityNavigation alert dialof -->
+    <string name="activity_navigation_alert_dialog_title">Access denied</string>
+    <string name="activity_navigation_alert_dialog_text">Your access to the service was denied</string>
+
+    <!-- Forgot Password -->
+    <string name="restore_pass">Restore password</string>
+    <string name="forgot_pass_request_confirm">Confirmation E-mail has been sent</string>
+    <string name="restore_pass_description">Enter your email and we will send you a link to restore your password</string>
+
+    <string name="title_activity_activity_navigation">Navigation</string>
+    <string name="title_section_channels">Channels</string>
+    <string name="title_section_time_zone">Time Zone</string>
+    <string name="title_section_language">Language</string>
+    <string name="title_section_update_membership">Membership</string>
+    <string name="title_section_change_password">Change Password</string>
+    <string name="title_section_edit_profile">Profile</string>
+    <string name="title_section_help">Help</string>
+    <string name="title_section_logout">Logout</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- Change password -->
+    <string name="change_pass_new_password">New Password</string>
+    <string name="change_pass_repeat_password">Repeat New Password</string>
+    <string name="change_pass_button_title">Change Password</string>
+    <string name="change_pass_success">Password changed successfully!</string>
+
+    <!-- Edit user -->
+    <string name="edit_user_name">Name</string>
+    <string name="edit_user_surname">Last Name</string>
+    <string name="edit_user_phone">Phone</string>
+    <string name="edit_user_language">Language</string>
+    <string name="edit_user_confirm">Save</string>
+    <string name="edit_user_description">Leave fields empty which you do not want to change</string>
+    <string name="edit_user_success">User data changed successfully</string>
+
+    <!-- Timezones -->
+    <string name="timezones_select">Select</string>
+    <string name="timezones_success">Time Zone changed successfully</string>
+
+    <!-- Language -->
+    <string name="language_selected">Language successfully changed</string>
+
+    <!-- Membership -->
+    <string name="membership_success">Success, check email to approval and complete order</string>
+    <string name="membership_button_continue_payment">Make Payment</string>
+    <string name="membership_card_number">Card Number</string>
+    <string name="membership_expiration_period">Expiration Period (mm/yyyy)</string>
+    <string name="membership_cvv_code">CVV Code</string>
+    <string name="membership_end">Update membership to view channels</string>
+    <string name="membership_end_archives">Update membership to view archives</string>
+    <string name="membership_month_pay">Monthly payment</string>
+
+    <!-- Channels -->
+    <string name="tab_title_ukr">Ukrainian</string>
+    <string name="failed_to_load_data_restart">Failed to load data. Restarting...</string>
+
+    <!-- Calendar -->
+    <string name="calendar_select_day">Select Day</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!--Button-->
+    <string name="button_yes">Yes</string>
+    <string name="button_no">No</string>
+    <string name="button_subscribe_with_credit_card">Subscribe with Credit Card</string>
+    <string name="button_register_with_facebook">Register with Facebook</string>
+    <string name="button_login_with_facebook">Log in with Facebook</string>
+    <string name="button_logout_with_facebook">Log out</string>
+
+    <string name="alert_dialog_no_internet_message">Network not responding</string>
+    <string name="alert_dialog_no_internet_title">Error</string>
+    <string name="alert_dialog_server_down_title">Error</string>
+    <string name="alert_dialog_server_down_message">There is a problem occurred on server. Please try back later. Sorry for inconvenience.</string>
+
+    <!-- Help -->
+    <string name="help_description">If you have any problems with our application please refer to the next support pages on our website.</string>
+    <string name="help_email_title"><b>By E-mail:</b></string>
+    <string name="archive_title">Archive</string>
+
+    <string name="title_activity_calendar">Archive</string>
+
+    <!--INFO Activity strings-->
+    <string name="info_tab0_before_main_text">
+        If you feel Mediacast is not for you - you can cancel your subscription online any time.
+    </string>
+    <string name="info_tab0_tabtext">No commitments!\nCancel any time</string>
+    <string name="info_tab1_tabtext">Watch\nanywhere</string>
+    <string name="info_tab2_tabtext">Pick\nyour price</string>
+
+    <string name="info_header_main">
+        Watch Ukrainian television in high quality on any device
+    </string>
+
+    <string name="info_header_choose_plan">Choose the plan that\'s \nright for you</string>
+
+    <string name="info_tab1_under_tv_text">Watch on your TV</string>
+    <string name="info_tab1_under_phone_text">Watch on the go</string>
+    <string name="info_tab1_under_desktop_text">Use any computer</string>
+
+    <string name="button_join_free">Join free for one week</string>
+    <string name="button_login_with_account">Login with existing account</string>
+
+    <string name="button_monthly_prising"><b>Monthly pricing</b></string>
+    <string name="button_yearly_prising"><b>Yearly pricing</b></string>
+    <string name="button_save">Save 20%\n</string>
+
+    <string name="you_save">You save $</string>
+    <string name="per_year">/year</string>
+    <string name="month">month</string>
+    <string name="adv_free">Advertising free</string>
+    <string name="screens_you_can_watch">Screens you can watch on the same time</string>
+    <string name="on_tv_laptop_phone">On your laptop, TV, phone or tablet</string>
+    <string name="days_14_archive">14 days archive</string>
+    <string name="channels">Channels</string>
+    <string name="cancel_any_time">Cancel any time</string>
+    <string name="first_7_days_free_2">First %1$s days free</string>
+    <string name="select">Select</string>
+    <string name="selected">Selected</string>
+
+    <!--INFO Registration strings-->
+    <string name="or">or</string>
+    <string name="signup_to_start_free_week">Sign up to start your free week</string>
+    <string name="create_your_account_info">Create your account</string>
+    <string name="create_my_account_info">Create my account</string>
+    <string name="keep_signed_in_check_box">Keep me signed in</string>
+    <string name="forgot_password_info">Forgot the password?</string>
+    <string name="password_info">Password</string>
+    <string name="email_info">Email</string>
+
+    <!--INFO Confirmation strings-->
+    <string name="confirm_info">Please confirm \nyour information</string>
+    <string name="change_plan"><u>Change plan</u></string>
+    <string name="free_until">Free until</string>
+    <string name="subscribe_with_playmarket">Subscribe with PlayMarket</string>
+    <string name="dont_worry">
+        Don\'t worry, we will email you two days before your free trial ends as a reminder
+    </string>
+
+    <string name="info_tab0_main_text">
+        We feel serious about delivering high quality licensed content to our clients.
+        Any customer is free to join our network of leave it any time.
+        So if you feel the service is not for you - you are free to cancel your subscription
+        online anytime.
+    </string>
+
+    <!--INFO ActivitySelectPrice strings-->
+    <string name="select_package">Please, select your package</string>
+    <string name="common_questions">Common questions</string>
+    <string name="info_faq"><b>What channels are included in every plan?</b>
+        \n\nPlease feel free to compare the list of TV channels in our plans.
+        <b>\n\n\nHow do I switch between plans?\nCan I cancel at any time?</b>
+        \n\nYes! You can cancel your subscription online anytime. More fore, you will not be billed
+        until your trial period will come to the end.
+        <b>\n\n\nIs there a money back guarantee?</b>
+        \n\nYes. You are allowed to cancel your subscription and demand a refund.
+        Refund will be divided on the amount of days you have used Mediacast.
+        <b>\n\n\nWhat payment methods are available to me?</b>
+        \n\nYou are free to pay with any credit or debit card,  Apple Pay or with your Apple Account.
+        <b>\n\n\nAre there any fees that are not included into the plan?</b>
+        \n\nNo. You will be charged exactly the same amount of money.
+        <b>\n\n\nWhat kind of support do you have?</b>
+        \n\nWe serve our customers in professional Zendesk Support Desk.
+        If you have any questions just create a ticket and our support department
+        will answer you shortly.
+    </string>
+
+    <!--INFO ActivityCreateAccount strings-->
+    <string name="check_box_terms_of_use">I agree to the</string>
+    <string name="terms_of_use"> <u>Terms of Use</u></string>
+    <string name="you_need_agree_terms_of_use">You need to agree Terms of Use</string>
+
+    <!--INFO ActivityThanksForSubscription strings-->
+    <string name="thank_for_subscription">Thank you for \nyour subscription!</string>
+    <string name="watch_television">Watch television</string>
+
+    <!--INFO ActivityBackToCheckOut strings-->
+    <string name="payment_error">Payment error!</string>
+    <string name="back_to_checkout">Back to checkout</string>
+
+</resources>

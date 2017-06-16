@@ -1,0 +1,96 @@
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                android:background="@color/white">
+
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_marginTop="20dp"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/image_view_tv"
+            android:src="@drawable/info_tv_screen"
+            android:layout_width="wrap_content"
+            android:layout_height="210dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingTop="32dp"
+            />
+
+        <TextView
+            android:text="@string/info_tab1_under_tv_text"
+            android:id="@+id/text_view_tv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="top|center"
+            android:layout_gravity="top|center"
+            android:textStyle="normal"/>
+
+        <ImageView
+
+            android:id="@+id/image_view_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="270dp"
+            android:gravity="center"
+            android:src="@drawable/info_on_the_go"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="30dp"/>
+
+
+        <TextView
+            android:text="@string/info_tab1_under_phone_text"
+            android:id="@+id/text_view_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="top|center"
+            android:layout_gravity="top|center"
+            android:textStyle="normal"/>
+
+        <ImageView
+            android:id="@+id/image_view_desktop"
+            android:layout_width="wrap_content"
+            android:layout_height="240dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="30dp"
+            android:src="@drawable/info_any_computer"/>
+
+
+        <TextView
+            android:text="@string/info_tab1_under_desktop_text"
+            android:id="@+id/text_view_desktop"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:gravity="top|center"
+            android:layout_gravity="top|center"
+            android:textStyle="normal"
+            android:layout_marginBottom="25dp"/>
+
+        <include layout="@layout/info_login_button_layout"/>
+
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>

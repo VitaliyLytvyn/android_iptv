@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/info_select_price_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".info.InfoSelectPriceActivity"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_dark3">
+
+    <LinearLayout
+
+        android:id="@+id/LinearLayoutMovingPart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        app:layout_collapseMode="pin"
+        android:orientation="vertical">
+
+        <include layout="@layout/info_header_logo_with_text"/>
+
+        <include layout="@layout/info_main_buttons_with_tab"/>
+
+    </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"  />
+
+</LinearLayout>

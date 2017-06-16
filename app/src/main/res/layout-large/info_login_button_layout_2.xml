@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="20dp"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <Button
+        android:text="@string/button_join_free"
+        android:layout_width="0dp"
+        android:id="@+id/button_join_bottom_2"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        style="@style/BlueInfoButtonStyle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline66"
+        app:layout_constraintRight_toLeftOf="@+id/guideline67"
+        />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline66"
+        app:layout_constraintGuide_percent="0.25"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline67"
+        app:layout_constraintGuide_percent="0.75"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp"/>
+</android.support.constraint.ConstraintLayout>

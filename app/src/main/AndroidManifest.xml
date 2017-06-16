@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.app.tv.mediacast"
+          android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        >
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true"/>
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="@string/fb_login_protocol_scheme"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActivityAuthorization"
+            android:label="@string/app_name"
+            android:parentActivityName=".info.InfoMainActivity"
+            android:theme="@style/InfoCreateAccTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.tv.mediacast.info.InfoMainActivity"/>
+        </activity>
+        <activity
+            android:name=".ActivityForgotPassword"
+            android:parentActivityName=".ActivityAuthorization"
+            android:theme="@style/InfoCreateAccTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.tv.mediacast.ActivityAuthorization"/>
+        </activity>
+        <activity
+            android:name=".ActivityNavigation"
+            android:label="@string/title_activity_activity_navigation"
+            android:theme="@style/CreateAccThemeWithActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+        </activity>
+        <activity
+            android:name=".ActivityLoading"
+            android:label="@string/app_name"
+            android:theme="@style/CreateAccTheme">
+        </activity>
+        <activity
+            android:name=".ActivityCalendar"
+            android:label="@string/title_activity_calendar"
+            android:parentActivityName=".ActivityExoPlayer"
+            android:theme="@style/CreateAccThemeWithActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.tv.mediacast.ActivityExoPlayer"/>
+        </activity>
+        <activity
+            android:name=".ActivityExoPlayer"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:launchMode="singleTask"
+            android:parentActivityName=".ActivityNavigation"
+            android:theme="@style/PlayerTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.tv.mediacast.ActivityNavigation"/>
+        </activity>
+        <activity
+            android:name=".info.InfoMainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/MyMaterialTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".info.InfoSelectPriceActivity"
+            android:parentActivityName=".info.InfoMainActivity"
+            android:theme="@style/MyMaterialTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.tv.mediacast.info.InfoMainActivity"/>
+        </activity>
+        <activity
+            android:name=".info.InfoCreateAccount"
+            android:parentActivityName=".info.InfoSelectPriceActivity"
+            android:theme="@style/InfoCreateAccTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.tv.mediacast.info.InfoSelectPriceActivity"/>
+        </activity>
+        <activity
+            android:name=".info.InfoConfirmActivity"
+            android:parentActivityName=".info.InfoSelectPriceActivity"
+            android:theme="@style/InfoCreateAccTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.tv.mediacast.info.InfoSelectPriceActivity"/>
+        </activity>
+        <activity
+            android:name=".info.InfoBackToCheckOutActivity"
+            android:parentActivityName=".info.InfoConfirmActivity"
+            android:theme="@style/MyMaterialTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.tv.mediacast.info.InfoConfirmActivity"/>
+        </activity>
+        <activity
+            android:name=".info.InfoThankForSubscribeActivity"
+            android:parentActivityName=".info.InfoConfirmActivity"
+            android:theme="@style/MyMaterialTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.tv.mediacast.info.InfoConfirmActivity"/>
+        </activity>
+        <activity
+            android:name=".info.InfoSubscribeStripeActivity"
+            android:parentActivityName=".info.InfoConfirmActivity"
+            android:theme="@style/InfoCreateAccTheme"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.tv.mediacast.info.InfoConfirmActivity"/>
+        </activity>
+        <activity
+            android:name=".info.InfoShowTermsOfUseActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:parentActivityName=".info.InfoConfirmActivity"
+            android:theme="@style/MyMaterialBlankTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.tv.mediacast.info.InfoConfirmActivity"/>
+        </activity>
+        <activity
+            android:name=".info.InfoUpgradeChooseCardActivity"
+            android:parentActivityName=".info.InfoSelectPriceActivity"
+            android:theme="@style/InfoCreateAccTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.app.tv.mediacast.info.InfoSelectPriceActivity"/>
+        </activity>
+    </application>
+
+</manifest>

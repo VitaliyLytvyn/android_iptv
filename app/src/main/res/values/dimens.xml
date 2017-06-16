@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    <dimen name="subtitle_minimum_font_size">13sp</dimen>
+
+    <dimen name="tab_max_width">264dp</dimen>
+    <dimen name="tab_padding_bottom">16dp</dimen>
+    <dimen name="tab_label">12sp</dimen>
+    <dimen name="custom_tab_layout_height">72dp</dimen>
+
+
+    <!-- Values to adjust fb button. -->
+    <dimen name="fb_btn_margin_override_top">13dp</dimen>
+    <dimen name="fb_btn_margin_override_bottom">13dp</dimen>
+
+    <dimen name="google_btn_margin_override_top">13dp</dimen>
+    <dimen name="google_btn_margin_override_bottom">13dp</dimen>
+
+    <!--The next value changes the margin between the FB icon and the left border:-->
+    <dimen name="fb_btn_margin_override_lr">40dp</dimen>
+    <dimen name="fb_btn_margin_override_rr">35dp</dimen>
+
+    <dimen name="google_btn_margin_override_lr">35dp</dimen>
+    <dimen name="google_btn_margin_override_rr">55dp</dimen>
+
+
+    <!--<dimen name="google_btn_margin_override_lr">10dp</dimen>-->
+
+    <!--The next value changes the margin between the FB icon and the login text:-->
+    <dimen name="fb_btn_margin_override_textpadding">12dp</dimen>
+    <dimen name="google_btn_margin_override_textpadding">0dp</dimen>
+    <dimen name="back_home_btn_margin_override_textpadding">4dp</dimen>
+
+
+    <dimen name="tab_padding">30dp</dimen>
+
+
+    <!--<dimen name="google_btn_margin_override_textpadding">17dp</dimen>-->
+
+</resources>

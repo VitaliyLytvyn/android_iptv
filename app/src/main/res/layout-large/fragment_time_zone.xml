@@ -1,0 +1,62 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+
+                                             tools:context="com.app.tv.mediacast.FragmentTimeZone"
+                                             android:orientation="vertical"
+                                             android:weightSum="3">
+
+
+    <ListView
+        android:id="@+id/listView_timezones"
+        style="@style/CustomListView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:divider="@android:color/transparent"
+
+        android:dividerHeight="4.0sp"
+        android:layout_marginStart="40dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="40dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="40dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toTopOf="@+id/guideline32"
+        app:layout_constraintBottom_toTopOf="@+id/guideline41"/>
+
+
+    <Button
+        android:id="@+id/button_timezones"
+        style="@style/GrayButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:gravity="center"
+        android:text="@string/timezones_select"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/listView_timezones"
+        app:layout_constraintRight_toRightOf="@+id/listView_timezones"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/listView_timezones"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline32"
+        app:layout_constraintGuide_percent="0.05"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="41dp"
+        tools:layout_editor_absoluteX="0dp"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline41"
+        app:layout_constraintGuide_percent="0.75"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="620dp"
+        tools:layout_editor_absoluteX="0dp"/>
+
+</android.support.constraint.ConstraintLayout>

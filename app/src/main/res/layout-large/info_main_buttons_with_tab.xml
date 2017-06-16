@@ -1,0 +1,80 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:orientation="vertical"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             app:layout_collapseMode="parallax"
+                                             app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+    <Button
+        android:text="@string/button_join_free"
+        android:layout_width="0dp"
+        android:id="@+id/buttonJoin"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/buttonLogin"
+        android:layout_marginBottom="20dp"
+        style="@style/BlueInfoButtonStyle"
+        app:layout_collapseMode="parallax"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        android:onClick="buttonJoinClicked"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline66"
+        app:layout_constraintRight_toLeftOf="@+id/guideline67"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"/>
+
+    <Button
+        android:text="@string/button_login_with_account"
+        android:layout_width="0dp"
+        android:id="@+id/buttonLogin"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="@+id/buttonJoin"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/buttonJoin"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tabs"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/white"
+        style="@style/SemiTransparentButtonStyle"
+        app:layout_collapseMode="parallax"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        android:onClick="buttonLoginClicked"/>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:paddingBottom="8dp"
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_collapseMode="parallax"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        app:tabIndicatorColor="@color/color_selected_tab"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline66"
+        app:layout_constraintGuide_percent="0.25"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline67"
+        app:layout_constraintGuide_percent="0.75"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp"/>
+
+</android.support.constraint.ConstraintLayout>

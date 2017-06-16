@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/info_select_price_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".info.InfoSelectPriceActivity"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_dark3">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:id="@+id/nestedScrollViewFragTwo">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <include layout="@layout/info_header_logo_with_text"/>
+
+            <FrameLayout
+                android:id="@+id/frame_for_fragment_two"
+                android:layout_width="match_parent"
+                android:layout_height="580dp"
+                android:textColor="@color/white"/>
+            <!--android:layout_height="580dp" - MAGIC GOES HERE-->
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
+
+

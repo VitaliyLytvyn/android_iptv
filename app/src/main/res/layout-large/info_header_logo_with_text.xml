@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:orientation="vertical"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content"
+                                             android:fitsSystemWindows="true"
+                                             app:layout_collapseMode="pin"
+                                             android:layout_marginBottom="20dp"
+                                             android:id="@+id/infoHeaderWithLogoLayout">
+    <!--android:background="@drawable/header_short_1"-->
+    <!--android:background="@drawable/background_1"-->
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageViewLogo"
+        android:src="@drawable/logo_white"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingEnd="12dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingStart="12dp"
+        tools:layout_constraintTop_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/guideline66"
+        app:layout_constraintRight_toLeftOf="@+id/guideline67"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewHead"
+        android:textColor="@color/white"
+        app:layout_constraintRight_toRightOf="@+id/imageViewLogo"
+        android:paddingEnd="4dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingStart="4dp"
+        android:gravity="center_horizontal"
+        tools:layout_constraintRight_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/imageViewLogo"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewLogo"
+        android:textSize="20sp"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline66"
+        app:layout_constraintGuide_percent="0.25"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="200dp"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline67"
+        app:layout_constraintGuide_percent="0.75"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="600dp"/>
+
+    <!--android:text="@string/info_header_main"-->
+
+</android.support.constraint.ConstraintLayout>
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+                                             <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                                             <!--xmlns:tools="http://schemas.android.com/tools"-->
+                                             <!--android:orientation="vertical"-->
+                                             <!--android:layout_width="match_parent"-->
+
+                                             <!--android:layout_height="wrap_content"-->
+
+                                             <!--android:fitsSystemWindows="true"-->
+
+                                             <!--app:layout_collapseMode="pin"-->
+                                             <!--android:layout_marginBottom="16dp"-->
+                                             <!--android:layout_marginTop="16dp"-->
+
+                                             <!---->
+                                             <!--&gt;-->
+    <!--&lt;!&ndash;android:background="@drawable/header_shortest3_1"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:background="@drawable/background_1"&ndash;&gt;-->
+
+<!--<ImageView-->
+
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/imageViewLogo"-->
+    <!--android:src="@drawable/logo_white"-->
+
+
+    <!--tools:layout_constraintRight_creator="1"-->
+    <!--app:layout_constraintRight_toRightOf="parent"-->
+    <!--tools:layout_constraintLeft_creator="1"-->
+    <!--app:layout_constraintLeft_toLeftOf="parent"-->
+    <!--app:layout_constraintTop_toTopOf="parent"-->
+    <!--app:layout_constraintHorizontal_bias="0.4"-->
+    <!--android:paddingEnd="12dp"-->
+    <!--android:paddingLeft="12dp"-->
+    <!--android:paddingRight="12dp"-->
+    <!--android:paddingStart="12dp"-->
+    <!--tools:layout_constraintTop_creator="1"-->
+    <!--android:layout_marginStart="32dp"-->
+    <!--android:layout_marginEnd="32dp"-->
+    <!--android:layout_marginLeft="32dp"-->
+    <!--android:layout_marginRight="32dp"/>-->
+
+<!--<TextView-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/textViewHead"-->
+    <!--android:textColor="@color/white"-->
+    <!--app:layout_constraintRight_toRightOf="@+id/imageViewLogo"-->
+    <!--android:paddingEnd="4dp"-->
+    <!--android:paddingLeft="4dp"-->
+    <!--android:paddingRight="4dp"-->
+    <!--android:paddingStart="4dp"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--tools:layout_constraintRight_creator="1"-->
+    <!--app:layout_constraintLeft_toLeftOf="@+id/imageViewLogo"-->
+    <!--android:layout_marginTop="8dp"-->
+
+    <!--app:layout_constraintTop_toBottomOf="@+id/imageViewLogo"-->
+    <!--android:textSize="18sp"/>-->
+
+    <!--&lt;!&ndash;android:text="@string/info_header_main"&ndash;&gt;-->
+
+<!--</android.support.constraint.ConstraintLayout>-->
