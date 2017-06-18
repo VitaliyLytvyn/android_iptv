@@ -7,6 +7,8 @@ Features:
 * Stripe payment flow
 * editing personal info
 * changing language of the app or time zone of translations
+* Data Binding
+* Retrofit 2 + Dagger 2
 * (In-app Billing and AndroidPay - both unfinished)  
 
 The app cannot be demonstrated because it is not on Play Store and server is off at the moment. 
